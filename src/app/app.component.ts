@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   standalone: true,
   template: `
-    Hello Universe
+    Hello {{ city }}, year: {{ 2023 + 1}}
   `,
   styles: `
     :host {
@@ -12,4 +12,6 @@ import { Component } from '@angular/core';
     }
   `,
 })
-export class AppComponent { }
+export class AppComponent {
+  public city: string = 'Teotihuacán';
+}
